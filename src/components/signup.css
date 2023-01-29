@@ -3,10 +3,42 @@
     align-items: center;
     justify-content: center;
     background-color: gray;
+    width: 80%;
+    height: 100vh;
+  border: 1px solid palevioletred;
+  margin: auto;
+}
+
+.formContainer input {
+    width: 400px;
+    outline: none;
+    border: none;
+    height: 20px;
+}
+
+.formContainer select {
+    width: 400px;
+    outline: none;
+    height: 25px;
+    border: none;
 }
 
 .formContainer .err {
     margin-top: 20px;
     margin-bottom: 20px;
+    color: red;
+}
+
+.welcome {
     color: green;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    height: 35px;
+    outline: none;
+    border: none;
 }

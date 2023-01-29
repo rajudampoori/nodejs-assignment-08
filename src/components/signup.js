@@ -73,9 +73,9 @@ const Signup = () => {
         <>
             <form className="formContainer">
                 <label for="name">NAME : </label>
-                <input type="text" id="name" name='name' data-testid="name" value={inpVal.name} onChange={setval} /><br></br>
+                <input type="text" id="name" name='name' data-testid="name" value={inpVal.name} onChange={setval} />
                 <label for="email">EMAIL : </label>
-                <input type="text" id="email" name='email' data-testid="email" value={inpVal.email} onChange={setval} /><br />
+                <input type="text" id="email" name='email' data-testid="email" value={inpVal.email} onChange={setval} />
                 <label for="gender">GENDER :</label>
                 <select id="gender" data-testid="gender" name='gender' value={inpVal.gender} onChange={setval}>
                     <option value="please select gender">Please select gender</option>
@@ -84,14 +84,14 @@ const Signup = () => {
                     <option value="other">Other</option>
                 </select>
                 <label for="phoneNumber">Phone Number : </label>
-                <input type="text" name='phoneNumber' id="phoneNumber" value={inpVal.phoneNumber} onChange={setval} /><br />
+                <input type="text" name='phoneNumber' id="phoneNumber" value={inpVal.phoneNumber} onChange={setval} />
                 <label for="password">Password : </label>
-                <input type="password" name='password' id="password" value={inpVal.password} onChange={setval} /><br />
+                <input type="password" name='password' id="password" value={inpVal.password} onChange={setval} />
                 <button onClick={handleSubmit}>Submit</button>
+                <div className="welcome">{welcomeMessage}</div>
                 <div className="err">{error}</div>
-            <div>{welcomeMessage}</div>
             </form>
-           
+
         </>
     )
 }
